@@ -16,7 +16,6 @@ public class Main {
         human1.setFirstName("Richard");
         human1.setCar(car1);
 
-        System.out.println("Fixisin.");
 
         System.out.println(human1.getFirstName());
         System.out.println(human1.getMoney());
