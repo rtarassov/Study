@@ -3,7 +3,27 @@ package program;
 import java.util.Date;
 import java.util.Random;
 
+
+//TUNE CAR
 public class Human {
+
+    public Human () {
+        System.out.println("Without parameters");
+    }
+
+    public Human (String firstName) {
+        this.firstName = firstName;
+        System.out.println("With firstname");
+
+    }
+
+    public Human (String firstName, String lastName, Date birthDate) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.birthDate = birthDate;
+        System.out.println("With both names");
+
+    }
 
     private Car car;
     private String firstName;
@@ -21,6 +41,10 @@ public class Human {
     }
 
     private int drivingExperience;
+
+    public void tune() {
+
+    }
 
     public double drive(int speed, int distance) {
         if (speed > car.getMaxSpeed()) {
