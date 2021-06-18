@@ -20,7 +20,7 @@ public class Main {
 
 
         System.out.println(human1.getFirstName());
-        System.out.println(human1.getMoney());
+        
         System.out.println(human1.getDrivingExperience());
         human1.repairCar();
         human1.repairCar();
