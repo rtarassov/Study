@@ -17,16 +17,12 @@ public class Main {
         human1.setCar(car1);
 
 
+
+
         System.out.println(human1.getFirstName());
         System.out.println(human1.getMoney());
         System.out.println(human1.getDrivingExperience());
         human1.repairCar();
-        double timeTaken = human1.drive(45, 100);
-        System.out.println(timeTaken + " minutes driven.");
-        System.out.println(human1.getDrivingExperience());
-        human1.getCar().setWorking(false);
-        System.out.println("Kas auto töötab? " + human1.getCar().isWorking());
-        human1.setMoney(500);
         human1.repairCar();
         System.out.println("Auto töötab jälle " + human1.getCar().isWorking());
         var carPart1 = new CarPart();
