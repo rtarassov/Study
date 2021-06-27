@@ -9,7 +9,7 @@
 * Has a Car
 * Has First and Last name
 * Has birth Date
-* Has driving experience
+* Has driving experience****
 * Has money
 * Has ID (a personal document with a type, and an expiration date)
     * Only possible documents are ID-card, drivers' licence and ISIC card

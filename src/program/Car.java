@@ -9,6 +9,38 @@ public class Car {
         this.color = color;
     }
 
+    private CarType type;
+    private CarPart part1;
+    private CarPart part2;
+    private Color color;
+    private int maxSpeed = 250;
+    private boolean isWorking = true;
+    private int mileage;
+
+    public void drive (int distance) {
+
+
+        if (mileage > 5000) {
+            throw new Error("The car must be repaired.");
+        }
+        mileage += distance;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     public CarType getType() {
         return type;
     }
@@ -61,21 +93,7 @@ public class Car {
         this.mileage = mileage;
     }
 
-    private CarType type;
-    private CarPart part1;
-    private CarPart part2;
-    private Color color;
-    private int maxSpeed = 250;
-    private boolean isWorking = true;
-    private int mileage;
 
-    public void drive (int distance) {
-        mileage += distance;
-
-        if (mileage > 5000) {
-            throw new Error("The car must be repaired.");
-        }
-    }
 
 
 }

@@ -20,21 +20,18 @@ public class Main {
         System.out.println();
         Human human1 = new Human("Richard", "Tarassov", date);
         System.out.println(human1.getBirthDate());
-        human1.setFirstName("Richard");
         human1.setCar(car1);
 
+        human1.drive(150, 20);
+        human1.setMoney(1000);
+        System.out.println(human1.getMoney());
+        System.out.println(car1.getMileage());
+        human1.drive(90, 51);
+        human1.repairCar();
+        human1.drive(50, 10);
+        System.out.println(car1.getMileage());
 
 
-        System.out.println(human1.getFirstName());
-        long lopp = System.currentTimeMillis();
-        System.out.println(lopp - algus);
-        System.out.println(human1.getDrivingExperience());
-        human1.repairCar();
-        human1.repairCar();
-        System.out.println("Auto töötab jälle " + human1.getCar().isWorking());
-        var carPart1 = new CarPart();
-        carPart1.setPart(CarPartType.TURBO);
-        System.out.println(carPart1.getPart());
 
 
 

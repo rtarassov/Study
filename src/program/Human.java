@@ -4,7 +4,6 @@ import java.util.Date;
 import java.util.Random;
 
 
-//TUNE CAR
 public class Human {
 
     public Human () {
@@ -31,6 +30,7 @@ public class Human {
     private Date birthDate;
     private int money = 100;
     private Id id;
+    private int drivingExperience;
 
     public int getDrivingExperience() {
         return drivingExperience;
@@ -40,8 +40,8 @@ public class Human {
         this.drivingExperience = drivingExperience;
     }
 
-    private int drivingExperience;
 
+//TUNE CAR
     public void tune() {
 
     }
@@ -83,7 +83,8 @@ public class Human {
         car.setWorking(true);
         money -= 100;
         car.setMileage(0);
-        return true;
+        System.out.println("The car has been repaired and mileage is now " + car.getMileage());
+        return car.isWorking();
     }
 
 
